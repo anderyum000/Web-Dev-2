@@ -70,7 +70,7 @@ h2 {
   text-align: center;
   border-style: solid;
 }
-button {
+.flex button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -84,8 +84,6 @@ button {
 footer {
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   background-color: darkgray;
 }
 .social ul {
@@ -100,13 +98,24 @@ footer {
   margin: auto;
   padding: 8px 16px;
   text-decoration: none;
-  float: left;
+  display: inline-block;
+  transform: translate(590px);
 }
 .social img {
-  width: 50px;
-  display: block;
-  float: right;
+  width: 40px;
+  vertical-align: middle;
+  transform: translate(735px);
+  padding: 5px;
 }
 .logo-footer img {
-  width: 100px;
+  height: 150px;
+  vertical-align: middle;
+}
+.logo-footer p {
+  display: inline-block;
+  font-size: 30px;
+}
+.logo-footer button {
+  border: none;
+  cursor: pointer;
 }
