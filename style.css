@@ -63,7 +63,7 @@ h2 {
 .flex {
   display: flex;
 }
-.flex > div {
+.flex div {
   margin: 10px;
   padding: 50px;
   font-size: 30px;
@@ -118,4 +118,15 @@ footer {
 .logo-footer button {
   border: none;
   cursor: pointer;
+}
+/* about main */
+.bio {
+  display: flex;
+}
+.bio div {
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-style: solid;
+  width: 1024px;
 }

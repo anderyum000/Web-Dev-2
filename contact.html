@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Mountain - Home</title>
+    <title>Mountain - Contact Us</title>
   </head>
   <body>
     <div class="header">
@@ -13,35 +13,25 @@
       </div>
       <nav>
         <ul>
-          <li><a class="active" href="">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
           <li><input type="text" placeholder="Search..." /></li>
         </ul>
       </nav>
     </div>
     <main>
-      <img src="/assets/pic.jpg" class="pic" />
-      <h2>Mountain Facts</h2>
-      <div class="flex">
-        <div>
-          Did you know that Mount Everest is the tallest mountain in the world?
-          <br />
-          <button>Learn More!</button>
-        </div>
-        <div>
-          Did you know that K2 is extremely difficult and has a high fatality
-          rate?
-          <br />
-          <button>Learn More!</button>
-        </div>
-        <div>
-          Did you know that Mount Kilimanjaro is the highest free standing
-          mountain in the world?
-          <br />
-          <button>Learn More!</button>
-        </div>
-      </div>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname">
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email">
+            <label for="desc">Description:</label><br>
+            <textarea id="desc" rows="4" cols="50"></textarea>
+            <button>Submit</button>
+        </form>
     </main>
     <footer>
       <div class="logo-footer">
