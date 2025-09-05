@@ -31,6 +31,9 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
+.active:hover {
+  background-color: teal;
+}
 .header li a:hover {
   background-color: #555;
   color: white;
@@ -45,12 +48,15 @@ li a {
   border: none;
   font-size: 17px;
 }
-
 .logo img {
   width: 100px;
   float: left;
 }
-
+.search {
+  border: none;
+  cursor: pointer;
+  width: 30px;
+}
 /* main section */
 .pic {
   width: 100%;
@@ -125,8 +131,35 @@ footer {
 }
 .bio div {
   padding: 50px;
-  font-size: 30px;
+  margin: 10px;
+  font-size: 20px;
   text-align: center;
   border-style: solid;
   width: 1024px;
+}
+/* contact main */
+form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  border: solid;
+  padding: 20px;
+  width: 500px;
+  justify-content: center;
+}
+.fname {
+  display: flex;
+  justify-content: center;
+}
+.submit {
+  padding: 10px 20px;
+  background-color: teal;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: darkslategray;
 }
