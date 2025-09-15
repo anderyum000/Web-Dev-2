@@ -137,6 +137,10 @@ footer {
   border-style: solid;
   width: 1024px;
 }
+.bio img {
+  justify-content: center;
+  align-items: center;
+}
 /* contact main */
 form {
   display: flex;
