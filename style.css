@@ -55,9 +55,8 @@ li a {
   width: 100px;
   float: left;
 }
-.search {
-  border: none;
-  cursor: pointer;
+.burger-menu img {
+  display: none;
   width: 30px;
 }
 /* main section */
@@ -232,6 +231,13 @@ form {
 }
 /* tablet styles */
 @media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .burger-menu img {
+    display: block;
+    width: 30px;
+  }
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
