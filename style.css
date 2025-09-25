@@ -233,6 +233,18 @@ form {
 @media (max-width: 768px) {
   nav {
     display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  nav li {
+    flex-basis: 100%;
+  }
+  nav a {
+    text-align: center;
+    font-size: 28px;
+  }
+  nav a:hover {
+    background-color: teal;
   }
   .burger-menu img {
     display: block;
@@ -258,5 +270,6 @@ form {
     height: 250px;
     object-fit: cover;
     object-position: center top;
+
   }
 }
