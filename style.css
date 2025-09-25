@@ -21,23 +21,24 @@ main {
   justify-content: center;
   align-items: center;
   background-color: darkgray;
+  flex-basis: 100%;
+  flex-wrap: wrap;
 }
-ul {
+.navlinks {
   list-style: none;
   height: 100%;
   display: flex;
 }
-li a {
+.navlinks li {
   display: block;
   color: #000;
   margin: auto;
   padding: 8px 16px;
   text-decoration: none;
+  flex-basis: 100%;
+  text-align: center;
 }
-.active:hover {
-  background-color: teal;
-}
-.header li a:hover {
+.navlinks li a:hover {
   background-color: #555;
   color: white;
 }
@@ -51,16 +52,16 @@ li a {
   border: none;
   font-size: 17px;
 }
-.logo img {
+.logo {
   width: 100px;
   float: left;
 }
-.burger-menu img {
+.hamburger {
   display: none;
   width: 30px;
 }
 /* main section */
-.pic {
+.img-container {
   width: 100%;
   height: 100%;
   padding: 50px;
@@ -231,24 +232,54 @@ form {
 }
 /* tablet styles */
 @media (max-width: 768px) {
-  nav {
+  .header {
+    flex-direction: column;
+  }
+  .hamburger img {
+    display: block;
+    width: 30px;
+  }
+  .burger-menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 4px solid black;
+  }
+  .burger-menu.show-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .burger-menu li {
+    padding: 10px;
+  }
+
+  .navlinks {
     display: none;
     flex-basis: 100%;
     flex-wrap: wrap;
   }
-  nav li {
+
+  .navlinks li {
     flex-basis: 100%;
+    padding: 30px 16px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
   }
-  nav a {
+
+  .navlinks a {
     text-align: center;
-    font-size: 28px;
+    font: 28px;
   }
-  nav a:hover {
-    background-color: teal;
-  }
-  .burger-menu img {
-    display: block;
-    width: 30px;
+
+  .navlinks a:hover {
+    background-color: black;
+    color: white;
   }
   .grid-container {
     grid-template-columns: 1fr;
@@ -270,6 +301,5 @@ form {
     height: 250px;
     object-fit: cover;
     object-position: center top;
-
   }
 }
