@@ -60,6 +60,9 @@ main {
   display: none;
   width: 30px;
 }
+.burger-menu {
+  display: none;
+}
 /* main section */
 .img-container {
   width: 100%;
@@ -235,9 +238,17 @@ form {
   .header {
     flex-direction: column;
   }
-  .hamburger img {
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger {
     display: block;
     width: 30px;
+  }
+  .hamburger img {
+    width: 100%;
   }
   .burger-menu {
     width: 100%;
@@ -246,6 +257,9 @@ form {
     justify-content: center;
     text-align: center;
     border-top: 4px solid black;
+  }
+  .burger-menu ul {
+    list-style: none;
   }
   .burger-menu.show-menu {
     display: flex;
